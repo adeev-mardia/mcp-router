@@ -1,0 +1,14 @@
+{
+  "name": "example-router",
+  "instructions": "Unified router exposing a notes server and a calculator server as one MCP server. Tools are namespaced as notes.<tool> and calculator.<tool>.",
+  "backends": {
+    "notes": {
+      "command": "python3",
+      "args": ["examples/notes_server.py"]
+    },
+    "calculator": {
+      "command": "python3",
+      "args": ["examples/calculator_server.py"]
+    }
+  }
+}
